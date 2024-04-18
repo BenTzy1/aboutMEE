@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>About Me</title>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  
+  <div class="container">
+    <div class="profile">
+      <img src="profile-pic.jpg" alt="Ben Austine" class="profile-image">
+      <h2 class="profile-name">Ben Austine R. Tolentino</h2>
+      <p class="profile-info">Hi! I'm Ben Austine, future IT of our fam, just a little boy who loves to code :)) haha eme eme lang to baka seryusohin nyo ih hehe quotes of the day eme effort yan 50 din yang hinanap ko para imotivate kayo diba ang bait ko sainyo.... Soon lahat ng message nyo sa NGL ko dito narin ako mag rrespond gagawa ako ng page for "NGL Q/A" shala haha</p>
+    </div>
+    
+    <div id="moreInfoGrid" class="grid hidden">
+      <button class="grid-item" onclick="showDialog('about')">ABOUT MYSELF</button>
+      <button class="grid-item" onclick="showDialog('crush')">CRUSH?!!</button>
+      <button class="grid-item" onclick="showDialog('quotes')">QUOTES OF THE DAY!!???</button>
+    </div>
+    
+    <div id="aboutDialog" class="dialog hidden">
+      <div class="dialog-content">
+        <div class="dialog-image">
+          <img src="about-pic.jpg" alt="About Pic">
+        </div>
+        <div class="dialog-message">
+          <h3>About Myself</h3>
+          <p>Ben nga pala, 15 y/o. Gusto ko maging IT para ihack ang puso ni—cru, I mean, gumawa ng Gcash Mod APK. Austine tawag sa bahay saken, Ben naman sa school, pero pag ikaw tatawag saken 😅😅 Babaero sa kwento nila, diko din alam pano ako naging babaero e. Maniwala nalang tayo sa kwento nila. About me nga diba hahaha. 15 y/o, ay nasabi ko na pala 'to. Pangarap maging IT, hindi adik. Sa paningin nyo man ay isa akong adik, pwes, sakanya lang ako adik hahahaha. Math favorite subject ko. Red naman sa color. Ano pa ba pwede dito sa about me? Oo nga, September 10 birthday ko hahaha. Tapos 'yun na 'yon. PM nyo nalang ako ng happy birthday, wag ka mahiya. Tas, bigyan mo narin ako ng regalo. About me, bato pa, correct nalang pag mali aken boss. ML player din pala. PM mo lang ako pag papabuhat ka, long press kita. Pag hindi ikaw siy—joke, wala nako masabi. End kona dito, thanks sa pag-sayang sa 3 mins mong pagbabasa.</p>
+        </div>
+        <button onclick="hideDialog('about')">Close</button>
+      </div>
+    </div>
+    
+    <div id="crushDialog" class="dialog hidden">
+      <div class="dialog-content">
+        <div class="dialog-image">
+          <img src="crush-pic.jpg" alt="Crush Pic">
+        </div>
+        <div class="dialog-message">
+          <p>GUSTO NYO PA TALAGA KILALANIN?!!! like damn si elisia nato tol🤨🤨🥰🥰 FIRST TIME MAINLOVE SA KPOP IDOL WALA NA KAYONG PAKE TAWAGIN NYO MAN AKONG BADING ITS OK SIYA NAYAN E??!!! ano paba magagawa ko she knows how to get me kahit HINDI NYA AKO KILALA🫠🫠 pero atlesst diba effort is effort DAPT CRUSH LANG MAKIKITA DITO DIBA?!! may message nato para sakanya hirap hirap gumawa ng codes tas pic nya lang papakita ko?😔😔</p>
+        </div>
+        <button onclick="hideDialog('crush')">Close</button>
+      </div>
+    </div>
+    
+    <div id="quotesDialog" class="dialog hidden">
+        <div class="dialog-content">
+          <div class="dialog-message">
+            <h3>Quotes of the Day</h3>
+            <p id="quoteOfTheDay">Click the button to get a random quote!</p>
+          </div>
+          <div class="dialog-buttons">
+            <button onclick="showRandomQuote()" class="dialog-button">Get Quote</button>
+            <button onclick="hideDialog('quotes')" class="dialog-button">Close</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com/tineeezneb"><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/benaustine.tolentino.10"><img src="facebook.jpeg" alt="Facebook"></a>
+        <a href="https://ngl.link/tineeezzben"><img src="ngl.jpeg" alt="NGL"></a>
+        <a href="#"><img src="tiktok.jpeg" alt="TikTok"></a>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
